@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+ユーザー(User)
+bin/rails g model User name:string identification:integer
+
+ユーザー個人情報(UserProfile)
+bin/rails g model User name:string identification:integer
