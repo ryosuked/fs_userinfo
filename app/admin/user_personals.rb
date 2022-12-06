@@ -1,5 +1,20 @@
 ActiveAdmin.register UserPersonal do
 
+  index do
+    id_column
+    column :user
+    column :first_name
+    column :last_name
+    column :sex
+    column :age
+    actions
+  end
+
+  filter :first_name
+  filter :last_name
+  filter :sex
+  filter :age
+
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
@@ -14,5 +29,5 @@ ActiveAdmin.register UserPersonal do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
-  
+
 end
