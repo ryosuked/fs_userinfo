@@ -5,4 +5,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  namespace :api do
+    namespace :v1 do
+      get '/users/:gid', to: 'users#show'
+      post '/user_personals', to: 'user_personals#create'
+      patch '/user_personals/:gid', to: 'user_personals#update'
+    end
+  end
 end

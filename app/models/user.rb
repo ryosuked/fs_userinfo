@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_one :user_personal
 
   enum sex: { unknown: 0, male: 1, female: 2, not_applicable: 9 }
 
