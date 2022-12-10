@@ -7,14 +7,16 @@ ActiveAdmin.register UserPersonal do
     column :first_name
     column :last_name
     column :sex
-    column :age
+    column :birthday
+    column :computed_age
+
     actions
   end
 
   filter :first_name
   filter :last_name
   filter :sex
-  filter :age
+  filter :birthday
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

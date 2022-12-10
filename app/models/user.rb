@@ -5,11 +5,6 @@ class User < ApplicationRecord
 
   before_create do
     generate_gid
-    set_age
-  end
-
-  def set_age
-    true
   end
 
   def generate_gid
