@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
+# rubocop:disable Style/GuardClause, Style/IfUnlessModifier, Metrics/MethodLength
 class Ability
   include CanCan::Ability
 
   def initialize(user)
-
     if user
       can :read, :all
 
@@ -51,3 +51,4 @@ class Ability
     # https://github.com/CanCanCommunity/cancancan/blob/develop/docs/define_check_abilities.md
   end
 end
+# rubocop:enable Style/GuardClause, Style/IfUnlessModifier, Metrics/MethodLength

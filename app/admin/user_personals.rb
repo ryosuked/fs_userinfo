@@ -1,3 +1,4 @@
+# rubocop:disable Style/LineLength, Layout/EmptyLinesAroundBlockBody
 ActiveAdmin.register UserPersonal do
 
   index do
@@ -31,3 +32,4 @@ ActiveAdmin.register UserPersonal do
   # end
 
 end
+# rubocop:enable Style/LineLength, Layout/EmptyLinesAroundBlockBody

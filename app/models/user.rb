@@ -9,7 +9,7 @@ class User < ApplicationRecord
   end
 
   def set_age
-
+    true
   end
 
   def generate_gid
