@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get '/users/:gid', to: 'users#show'
       post '/user_personals', to: 'user_personals#create'
-      patch '/user_personals/:gid', to: 'user_personals#update'
+      patch '/users/:gid/user_personals', to: 'user_personals#update'
     end
   end
 end
