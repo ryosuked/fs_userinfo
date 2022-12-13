@@ -69,7 +69,6 @@ bin/rails g model UserPersonal user:references first_name:string last_name:strin
     * GET api/users/:gid
 
 ## Issue List
-* APIについてopenapiフォーマットで仕様を記述
 * specでopenapiフォーマットを利用してjson型チェック
 * UserPersonalにemailを追加
 * 管理画面の表示内容を調整
